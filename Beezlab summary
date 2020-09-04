@@ -1,0 +1,14 @@
+a_string = " beez lab provides a platform to bring business and technology together"
+
+number_of_letters = len(a_string) - a_string.count(" ")
+
+print(number_of_letters)
+
+
+
+
+
+
+
+
+
