@@ -1,0 +1,51 @@
+import java.util.*;
+public class MyClass {
+	public static void main(String[] args)
+	{
+	    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the number of students:");
+    int n=sc.nextInt();
+    for(int i=0;i<n;i++)
+    {
+        int e[]=new int[2];
+        int t[]=new int[2];
+        int m[]=new int[2];
+        int s[]=new int[2];
+        int ss[]=new int[2];
+        double eavg,tavg,mavg,savg,ssavg;
+        System.out.println("Enter the "+(i+1)+" student Quarterly marks");
+        System.out.println("English=");
+        e[0]=sc.nextInt();
+        System.out.println("Tamil=");
+        t[0]=sc.nextInt();
+        System.out.println("Math=");
+        m[0]=sc.nextInt();
+        System.out.println("Science=");
+        s[0]=sc.nextInt();
+        System.out.println("Social Science=");
+        ss[0]=sc.nextInt();
+        System.out.println("Enter the "+(i+1)+" student Half Yearly marks");
+        System.out.println("English=");
+        e[1]=sc.nextInt();
+        System.out.println("Tamil=");
+        t[1]=sc.nextInt();
+        System.out.println("Math=");
+        m[1]=sc.nextInt();
+        System.out.println("Science=");
+        s[1]=sc.nextInt();
+        System.out.println("Social Science=");
+        ss[1]=sc.nextInt();
+        System.out.println("Average of "+(i+1)+" student");
+        eavg=(e[0]+e[1])/2.0;
+        tavg=(t[0]+t[1])/2.0;
+        mavg=(m[0]+m[1])/2.0;
+        savg=(s[0]+s[1])/2.0;
+        ssavg=(ss[0]+ss[1])/2.0;
+        System.out.println("English="+eavg);
+        System.out.println("Tamil="+tavg);
+        System.out.println("Math="+mavg);
+        System.out.println("Science="+savg);
+        System.out.println("Social Science="+eavg);
+    }
+	}
+}
